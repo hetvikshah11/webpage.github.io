@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>smartAtm</title>
+        <style>
+            body{
+                background-color: khaki;
+            }
+            p{
+                color: red;
+            }
+            h1{
+                color: blue;
+            }
+            .mycls{
+                color: green;
+                font-size: 50px;
+                font-weight: bold;
+                font-style: italic;
+            }
+            .compact{
+                color: hotpink;
+                font-size: 50px;
+                font-weight: bold;
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <table style="width: 100%;">
+            <tr>
+                <td>
+                    <table style="width: 100%;" > 
+                        <tr>
+                            <td>
+                                <img src="images/atmlogo.jpeg" width="300" height="200" alt="Company Logo">
+                            </td>  
+                            <td style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 70px;color: green;">
+                                smartAtm
+                            </td>                    
+                        </tr>
+                        <tr>
+                            <td>Smart Money</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="height:5; background-color: green;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <table>
+                                <tr>
+                                    <td style="text-align:center; width: 100px;">
+                                        <a href="Home.html">Home</a>                                            
+                                    </td>
+                                    <td style="text-align:center; width: 100px;">
+                                        <a href="Login.html">Login</a>                                            
+                                    </td>
+                                    <td style="text-align: center; width: 100px;">
+                                        <a href="Signup.html">Sign Up</a>
+                                    </td>
+                                    <td style="text-align:center; width: 100px;">
+                                        <a href="AboutUs.html">About Us</a>                                            
+                                    </td>
+                                    <td style="text-align:center; width: 100px;">
+                                        <a href="ContactUs.html">Contact Us</a>                                            
+                                    </td>
+                                    <td style="text-align:center; width: 100px;">
+                                        <a href="Help.html">Help</a>                                            
+                                    </td>
+                                </tr>
+                            </table>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="height: 10; background-color: maroon;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <h1 style="color: darkmagenta;">Meet our team</h1>
+                                <img id="myteam" src="images/vikas.jpeg" style="width: 300px; height: 300px;">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <script>
+            var imgArray = ["images/vikas.jpeg","images/alia.jpeg","images/deepika.jpeg",
+            "images/ironman.jpeg","images/ranbeer.jpeg","images/sallu.jpeg","images/sara.jpeg",
+            "images/srk.jpeg","images/tom.jpeg"];
+            var i=0;
+            var len = imgArray.length;
+            var e = document.getElementById("myteam");
+            setInterval("e.src=imgArray[i++%len]",200);
+        </script>
+    <h1 class = "mycls">About Us Page</h1>
+    <p class="mycls">
+        We at compact believe in good quality work. Whether it is a Project 
+        Development or teaching. We are doing good work for computer and 
+        information technology industry since last 25 years. 
+     </p>
+     <p class="compact">Our 
+         main office is at R.B.G. Complex, opposite bahuchraji mandir, bahuchraji
+         road, karelibaug, Baroda. My email address is patniamit@yahoo.com. 
+         We are doing software development and final year project development 
+         since last 10 years...
+     </p>
+    </body>
+</html>
